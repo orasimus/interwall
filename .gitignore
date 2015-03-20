@@ -1,1 +1,14 @@
-Source/Temp
+syntax: glob
+Source/Build
+Source/Library/
+Source/Obj/
+Source/Temp/
+Source/*.sln
+Source/*.csproj
+*.suo
+*.sln.docstates
+*.unityproj
+*.pidb
+*.userprefs
+*.DS_Store
+Thumbs.db
