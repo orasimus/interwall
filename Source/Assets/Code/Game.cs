@@ -21,7 +21,7 @@ public class Game
             Play(Levels.Current);
             return;
         }
-        Debug.LogWarning("End game");
+        Application.LoadLevel("End");
     }
 
     private static void Play(Level level)
