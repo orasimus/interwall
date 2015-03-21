@@ -1,10 +1,9 @@
 fileFormatVersion: 2
-guid: 2a75e1d95dc27704faafc80f37e16125
-timeCreated: 1426964966
+guid: f9f863bdd2c7c004692f4641aecd7300
+timeCreated: 1426971841
 licenseType: Pro
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: 1_priimi_0
+  fileIDToRecycleName: {}
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -28,7 +27,7 @@ TextureImporter:
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -3
-  maxTextureSize: 1024
+  maxTextureSize: 256
   textureSettings:
     filterMode: 0
     aniso: 16
@@ -38,7 +37,7 @@ TextureImporter:
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -49,17 +48,7 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites:
-    - name: 1_priimi_0
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 70
-        width: 251
-        height: 117
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+    sprites: []
   spritePackingTag: UI
   userData: 
   assetBundleName: 

@@ -1,11 +1,9 @@
 fileFormatVersion: 2
-guid: b86a17018ed8f6b45bb87e82e749c8a7
-timeCreated: 1426960531
+guid: 6f821ca0806fa5a48bf2c6e5648de64e
+timeCreated: 1426971841
 licenseType: Pro
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: 8_oktaavi_0
-    21300002: 8_oktaavi_1
+  fileIDToRecycleName: {}
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -29,7 +27,7 @@ TextureImporter:
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -3
-  maxTextureSize: 1024
+  maxTextureSize: 256
   textureSettings:
     filterMode: 0
     aniso: 16
@@ -39,7 +37,7 @@ TextureImporter:
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -50,17 +48,7 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites:
-    - name: 8_oktaavi_0
-      rect:
-        serializedVersion: 2
-        x: 379
-        y: 320
-        width: 252
-        height: 117
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+    sprites: []
   spritePackingTag: UI
   userData: 
   assetBundleName: 
