@@ -3,11 +3,14 @@ using System.Collections;
 
 public class OnClickPlayInterval : MonoBehaviour {
 
-	public AudioClip interval;
-
 	public void PlayInterval()
 	{
+		var level = X.Level;
+		Debug.Log (level.Interval);
+		var sound = (AudioClip)Resources.Load (level.Interval);
 		var audioSource = FindObjectOfType<AudioSource> ();
-		audioSource.PlayOneShot (interval);
+		audioSource.PlayOneShot (sound);
+
+
 	}
 }

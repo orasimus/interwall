@@ -10,8 +10,8 @@ public class X : MonoBehaviour
             return new Level()
             {
                 Interval = "Sounds/ding",
-                CorrectSheet = "A",
-                WrongSheet = "C",
+                CorrectSheet = "Sprites/C",
+                WrongSheet = "A",
                 WrongSheet2 = "G"
             };
         }
