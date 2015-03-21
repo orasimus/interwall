@@ -13,7 +13,7 @@ public class LevelGenerator : MonoBehaviour
     void Start()
     {
         var levels = GenerateLevels(8).ToList();
-        Levels.StartGame(levels);
+        Game.StartGame(levels);
     }
 
     private IEnumerable<Level> GenerateLevels(int tests)
