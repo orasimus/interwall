@@ -7,6 +7,12 @@ public class X : MonoBehaviour
 
 	void Start ()
 	{
-		Level = new Level();
+		Level = new Level()
+		{
+			Interval = "Sounds/ding",
+			CorrectSheet = "A",
+			WrongSheet = "C",
+			WrongSheet2 = "G"
+		};
 	}
 }
