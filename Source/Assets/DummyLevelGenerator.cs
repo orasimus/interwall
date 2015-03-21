@@ -1,13 +1,12 @@
-﻿using System.Collections;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class DummyLevelGenerator : MonoBehaviour
 {
-    void Start()
+    void Awake()
     {
-        if (Levels.Current != null) { return; }
+        if (Game.Current != null) { return; }
 
-        Levels.SetDummyLevel(new Level
+        Game.SetDummyLevel(new Level
         {
             Interval = "6_seksti",
             WrongInterval1 = "1_priimi",
