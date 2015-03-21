@@ -1,9 +1,10 @@
 fileFormatVersion: 2
-guid: 99860c02b12b2d54999dbfd8c9ead961
-timeCreated: 1426948767
+guid: c141184e23c387c45a2e1729cfd55309
+timeCreated: 1426958576
 licenseType: Pro
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: intervalli_alusta_0
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -26,18 +27,18 @@ TextureImporter:
   cubemapConvolutionSteps: 8
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
-  textureFormat: -1
-  maxTextureSize: 2048
+  textureFormat: -3
+  maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -48,7 +49,17 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: intervalli_alusta_0
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 128
+        width: 398
+        height: 508
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
   assetBundleName: 

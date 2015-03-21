@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class Sheets : MonoBehaviour
@@ -15,11 +16,17 @@ public class Sheets : MonoBehaviour
             level.WrongInterval1, 
             level.WrongInterval2
         };
+        var resultText = FindObjectOfType<Text>();
         foreach (var image in sheets.Select(s => s.GetComponent<Image>()))
         {
             var randomInterval = intervals.GetRandom();
             intervals.Remove(randomInterval);
             image.sprite = GetSprite(randomInterval);
+            var parentButton = image.transform.parent.GetComponent<Button>();
+            var result = (randomInterval == level.Interval) ? 
+                "<color=#00ff00ff>Correct</color>" :
+                "<color=#ff0000ff>Wrong</color>";
+            parentButton.onClick.AddListener(() => resultText.text = result);
         }
     }
 
