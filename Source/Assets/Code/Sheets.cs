@@ -23,7 +23,7 @@ public class Sheets : MonoBehaviour
             intervals.Remove(randomInterval);
             image.sprite = GetSprite(randomInterval);
             var parentButton = image.transform.parent.GetComponent<Button>();
-            var result = (randomInterval == level.Interval) ? 
+            var result = (randomInterval == level.Interval) ?
                 "<color=#00ff00ff>Correct</color>" :
                 "<color=#ff0000ff>Wrong</color>";
             parentButton.onClick.AddListener(() => resultText.text = result);
@@ -32,6 +32,6 @@ public class Sheets : MonoBehaviour
 
     private Sprite GetSprite(string interval)
     {
-        return Resources.Load<Sprite>("Sprites/" + interval);
+        return Manager.Sprites[interval];
     }
 }

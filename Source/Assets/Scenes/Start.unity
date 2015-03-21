@@ -87,6 +87,53 @@ NavMeshSettings:
     cellSize: .166666672
     manualCellSize: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &1617816672
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1617816674}
+  - 114: {fileID: 1617816673}
+  m_Layer: 0
+  m_Name: Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1617816673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1617816672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a19ef653b5192c3499a7ca799b6588c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Priimi: {fileID: 21300000, guid: 2a75e1d95dc27704faafc80f37e16125, type: 3}
+  Sekunti: {fileID: 21300000, guid: b1939c9aa741cb44191cdda251da564a, type: 3}
+  Terssi: {fileID: 21300002, guid: 2ed0b423a3bae96478d37d42674d9856, type: 3}
+  Kvartti: {fileID: 21300000, guid: be5f5b8db1cb1d84ba553cd321a7277b, type: 3}
+  Kvintti: {fileID: 21300000, guid: d2923ccfbe28432459585cb7e07a590e, type: 3}
+  Seksti: {fileID: 21300000, guid: be98b7666dbf6084fa83cbe5c4eef181, type: 3}
+  Septimi: {fileID: 21300000, guid: 9840c91f66214f440b4c7b183572a2b6, type: 3}
+  Oktaavi: {fileID: 21300000, guid: b86a17018ed8f6b45bb87e82e749c8a7, type: 3}
+--- !u!4 &1617816674
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1617816672}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
 --- !u!1 &1977605718
 GameObject:
   m_ObjectHideFlags: 0
