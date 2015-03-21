@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: b86a17018ed8f6b45bb87e82e749c8a7
-timeCreated: 1426958478
+timeCreated: 1426960531
 licenseType: Pro
 TextureImporter:
   fileIDToRecycleName:
@@ -60,16 +60,6 @@ TextureImporter:
         height: 117
       alignment: 0
       pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: 8_oktaavi_1
-      rect:
-        serializedVersion: 2
-        x: 632
-        y: 268
-        width: 10
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

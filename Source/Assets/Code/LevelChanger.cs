@@ -1,13 +1,9 @@
 ﻿using UnityEngine;
-using System.Collections;
 
 public class LevelChanger : MonoBehaviour
 {
-    void Update()
+    public void AdvanceLevel()
     {
-        if (Input.GetKeyUp(KeyCode.W))
-        {
-            Game.AdvanceLevel();
-        }
+        Game.AdvanceLevel();
     }
 }
