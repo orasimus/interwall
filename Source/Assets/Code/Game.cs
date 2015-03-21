@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Game
 {
-    public static Level Current { get; private set; }
+    public static Level CurrentLevel { get; private set; }
 
     private static IEnumerator<Level> Levels { get; set; }
 
@@ -26,14 +26,14 @@ public class Game
 
     private static void Play(Level level)
     {
-        Current = level;
-        Debug.Log("Playing " + Current);
+        CurrentLevel = level;
+        Debug.Log("Playing " + CurrentLevel);
         Application.LoadLevel("Game");
     }
 
     public static void SetDummyLevel(Level level)
     {
-        if (Current != null) { return; }
-        Current = level;
+        if (CurrentLevel != null) { return; }
+        CurrentLevel = level;
     }
 }

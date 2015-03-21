@@ -4,7 +4,7 @@ public class DummyLevelGenerator : MonoBehaviour
 {
     void Awake()
     {
-        if (Game.Current != null) { return; }
+        if (Game.CurrentLevel != null) { return; }
 
         Game.SetDummyLevel(new Level
         {
