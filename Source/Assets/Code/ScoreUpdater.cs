@@ -8,6 +8,6 @@ public class ScoreUpdater : MonoBehaviour
     void Start()
     {
         var text = GetComponent<Text>();
-        text.text = string.Format(Message, Game.Score, Game.MaxScore);
+        text.text = string.Format(Message, Game.Score, LevelGenerator.Levels);
     }
 }
