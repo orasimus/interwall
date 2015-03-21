@@ -32,6 +32,6 @@ public class Sheets : MonoBehaviour
 
     private Sprite GetSprite(string interval)
     {
-        return Manager.Sprites[interval];
+        return ResourceLocator.Sprites[interval];
     }
 }

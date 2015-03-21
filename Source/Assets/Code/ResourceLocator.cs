@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-public class Manager : MonoBehaviour
+public class ResourceLocator : MonoBehaviour
 {
     public Sprite Priimi;
     public Sprite Sekunti;
