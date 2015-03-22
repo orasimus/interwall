@@ -3,13 +3,15 @@ using UnityEngine;
 
 public class Game
 {
-    public static Level Current { get; private set; }
+    public static Level CurrentLevel { get; private set; }
 
     private static IEnumerator<Level> Levels { get; set; }
+    public static int Score { get; private set; }
 
     public static void StartGame(IEnumerable<Level> levels)
     {
         Levels = levels.GetEnumerator();
+        Score = 0;
         AdvanceLevel();
     }
 
@@ -26,14 +28,19 @@ public class Game
 
     private static void Play(Level level)
     {
-        Current = level;
-        Debug.Log("Playing " + Current);
+        CurrentLevel = level;
+        Debug.Log("Playing " + CurrentLevel);
         Application.LoadLevel("Game");
+    }
+
+    public static void AddScore()
+    {
+        Score += 1;
     }
 
     public static void SetDummyLevel(Level level)
     {
-        if (Current != null) { return; }
-        Current = level;
+        if (CurrentLevel != null) { return; }
+        CurrentLevel = level;
     }
 }

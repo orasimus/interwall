@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class LevelGenerator : MonoBehaviour
 {
+    public const int Levels = 8;
+
     private readonly List<string> intervals = new List<string>
     {
         "1_priimi", "2_sekunti", "3_terssi", "4_kvartti",
@@ -12,7 +14,7 @@ public class LevelGenerator : MonoBehaviour
 
     void Start()
     {
-        var levels = GenerateLevels(8).ToList();
+        var levels = GenerateLevels(Levels);
         Game.StartGame(levels);
     }
 
