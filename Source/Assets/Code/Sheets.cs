@@ -5,8 +5,11 @@ using UnityEngine.UI;
 
 public class Sheets : MonoBehaviour
 {
+    private static bool answered;
+
     void Start()
     {
+        answered = false;
         var level = Game.CurrentLevel;
         var sheets = GetComponentsInChildren<Notes>();
         var intervals = new List<string>
@@ -38,9 +41,10 @@ public class Sheets : MonoBehaviour
             ? "<color=#00ff00ff>Correct</color>"
             : "<color=#ff0000ff>Wrong</color>";
         parentButton.onClick.AddListener(() => resultText.text = result);
-        if (isCorrectAnswer)
+        parentButton.onClick.AddListener(() =>
         {
-            parentButton.onClick.AddListener(Game.AddScore);
-        }
+            if (!answered && isCorrectAnswer) { Game.AddScore(); }
+            answered = true;
+        });
     }
 }
