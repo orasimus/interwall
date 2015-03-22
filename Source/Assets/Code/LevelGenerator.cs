@@ -12,7 +12,7 @@ public class LevelGenerator : MonoBehaviour
         "5_kvintti", "6_seksti", "7_septimi", "8_oktaavi"
     };
 
-    void Start()
+    public void StartGame()
     {
         var levels = GenerateLevels(Levels);
         Game.StartGame(levels);
