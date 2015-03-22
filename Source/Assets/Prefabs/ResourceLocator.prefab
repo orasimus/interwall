@@ -47,6 +47,8 @@ MonoBehaviour:
   Seksti: {fileID: 21300000, guid: 6f821ca0806fa5a48bf2c6e5648de64e, type: 3}
   Septimi: {fileID: 21300000, guid: 82c5ee186ff89e140bef31836bc76ec0, type: 3}
   Oktaavi: {fileID: 21300000, guid: f9f863bdd2c7c004692f4641aecd7300, type: 3}
+  Audio: {fileID: 21300000, guid: 266739f52032868428a743176d8fb346, type: 3}
+  MutedAudio: {fileID: 21300000, guid: f22e55eb9deda624390b2fd2e3401463, type: 3}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

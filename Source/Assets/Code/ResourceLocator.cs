@@ -11,6 +11,8 @@ public class ResourceLocator : MonoBehaviour
     public Sprite Seksti;
     public Sprite Septimi;
     public Sprite Oktaavi;
+    public Sprite Audio;
+    public Sprite MutedAudio;
 
     public static Dictionary<string, Sprite> Sprites;
 
@@ -26,7 +28,9 @@ public class ResourceLocator : MonoBehaviour
             { "5_kvintti", Kvintti },
             { "6_seksti", Seksti },
             { "7_septimi", Septimi },
-            { "8_oktaavi", Oktaavi }
+            { "8_oktaavi", Oktaavi },
+            { "audio", Audio },
+            { "mutedAudio", MutedAudio }
         };
     }
 }
