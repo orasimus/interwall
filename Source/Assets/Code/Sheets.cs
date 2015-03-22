@@ -26,7 +26,7 @@ public class Sheets : MonoBehaviour
             image.sprite = GetSprite(randomInterval);
             var parentButton = image.transform.parent.GetComponent<Button>();
             var isCorrectAnswer = (randomInterval == level.Interval);
-            AddListeners(isCorrectAnswer, parentButton, resultText);
+            AddListeners(isCorrectAnswer, parentButton, resultText, level.Interval);
         }
     }
 
@@ -35,7 +35,11 @@ public class Sheets : MonoBehaviour
         return ResourceLocator.Sprites[interval];
     }
 
-    private static void AddListeners(bool isCorrectAnswer, Button parentButton, Text resultText)
+    private static void AddListeners(
+        bool isCorrectAnswer,
+        Button parentButton,
+        Text resultText,
+        string correctInterval)
     {
         var result = isCorrectAnswer
             ? "<color=#00ff00ff>Correct</color>"
@@ -43,7 +47,17 @@ public class Sheets : MonoBehaviour
         parentButton.onClick.AddListener(() => resultText.text = result);
         parentButton.onClick.AddListener(() =>
         {
-            if (!answered && isCorrectAnswer) { Game.AddScore(); }
+            if (!answered)
+            {
+                if (isCorrectAnswer)
+                {
+                    Game.AddScore();
+                }
+                else
+                {
+                    Game.AddFailedInterval(correctInterval);
+                }
+            }
             answered = true;
         });
     }
