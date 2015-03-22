@@ -4,14 +4,16 @@ using UnityEngine;
 public class Game
 {
     public static Level CurrentLevel { get; private set; }
+    public static int Score { get; private set; }
+    public static List<string> FailedIntervals { get; set; }
 
     private static IEnumerator<Level> Levels { get; set; }
-    public static int Score { get; private set; }
 
     public static void StartGame(IEnumerable<Level> levels)
     {
         Levels = levels.GetEnumerator();
         Score = 0;
+        FailedIntervals = new List<string>();
         AdvanceLevel();
     }
 
@@ -36,6 +38,11 @@ public class Game
     public static void AddScore()
     {
         Score += 1;
+    }
+
+    public static void AddFailedInterval(string interval)
+    {
+        FailedIntervals.Add(interval);
     }
 
     public static void SetDummyLevel(Level level)
