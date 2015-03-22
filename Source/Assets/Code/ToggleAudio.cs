@@ -8,16 +8,16 @@ public class ToggleAudio : MonoBehaviour
     public void Toggle()
     {
         var image = GetComponent<Image>();
-        var audioSource = FindObjectOfType<AudioSource>();
+        var audioSources = FindObjectsOfType<AudioSource>();
         if (toggled)
         {
             image.sprite = ResourceLocator.Sprites["mutedAudio"];
-            audioSource.volume = 0f;
+            foreach (var audioSource in audioSources) { audioSource.volume = 0f; }
         }
         else
         {
             image.sprite = ResourceLocator.Sprites["audio"];
-            audioSource.volume = 1f;
+            foreach (var audioSource in audioSources) { audioSource.volume = 1f; }
         }
         toggled = !toggled;
     }
