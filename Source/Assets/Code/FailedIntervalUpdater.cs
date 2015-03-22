@@ -8,6 +8,7 @@ public class FailedIntervalUpdater : MonoBehaviour
 
     void Start()
     {
+        if (Game.FailedIntervals == null) { return; }
         var text = GetComponent<Text>();
         var failedIntervals = Game.FailedIntervals
             .GroupBy(i => i)
