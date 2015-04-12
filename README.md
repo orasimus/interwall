@@ -2,7 +2,7 @@
 
 Interwall is an educational game which teaches you to recognize musical intervals.
 
-Interwall was made at [ViLLE-edugame-Hackathon 2015](https://ville.cs.utu.fi/hackathon/).
+Interwall was made at [ViLLE-edugame-Hackathon 2015](https://ville.cs.utu.fi/hackathon/). You can play the game at [http://www.rasimus.fi/interwall/](http://www.rasimus.fi/interwall/).
 
 ## Getting Started
 
